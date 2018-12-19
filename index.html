@@ -4,22 +4,71 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="framework.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/framework.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 
     <title>Interestmm | Home</title>
-
+    <meta name="theme-color" content="rgb(16, 212, 212)"/>
 </head>
 <body>
-    
-<h1>Interestmm</h1>
+<div class="bg">
 
-
+</div>
+<div class="outer">
+    <div class="middle">
+        <div class="in-box">
+            <div class="in-box1">
+            
+            </div>
+            <div class="in-box2 container-2">
+                <h1>interestmm</h1>
+                <div class="container-3">
+                    <form method="GET" action="signinprc.php">
+                        <div class="input-field">
+                            <input id="name" type="text" class="validate white-text">
+                            <label class="white-text" for="name">Your Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label class="white-text" for="email">Email</label>
+                        </div>
+                        <!-- Customizable input  -->
+                        <p style="transform: translateY(20px)" class="white-text">Interests</p>
+                        <div class="chips white-text">
+                            <input class="autocomplete custom-class white-text" id="autocomplete-input">
+                        </div>
+                        
+                        <input class="container-1" name="in-signin" type="submit" value="sign in">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
 
 <script src="index.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+
+   $('.chips').chips();
+
+   $(document).ready(function () {
+        $('input.autocomplete').autocomplete({
+            data: {
+                "Acroba": null
+            },
+        });
+    });
+
+</script>
 </body>
 </html>

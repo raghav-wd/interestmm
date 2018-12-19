@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.container-1{
+    padding: 10px;
+}
+
+.container-2{
+    padding: 20px;
+}
+
+.container-3{
+    padding: 30px;
+}
+
+.container-4{
+    padding: 40px;
+}
+
+.container-5{
+    padding: 50px;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+
+img:last-child {
+    opacity: 0;
+    height: 0px;
+}
