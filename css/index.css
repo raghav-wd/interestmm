@@ -83,7 +83,7 @@ body{
     }
 }
 
-input[name="in-signin"] {
+#next, #back, #submit {
     background-color: white;
     border: none;
     color: grey;
@@ -92,7 +92,23 @@ input[name="in-signin"] {
     margin: 10px;
 }
 
-input[name="in-signin"]:hover {
+#back {
+    float: left;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+#next:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.in-i_f2{
+    display: none;
+}
+
+#pw-mm {
+    display:none;
 }

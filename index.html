@@ -14,9 +14,11 @@
     <meta name="theme-color" content="rgb(16, 212, 212)"/>
 </head>
 <body>
+
 <div class="bg">
 
 </div>
+
 <div class="outer">
     <div class="middle">
         <div class="in-box">
@@ -27,21 +29,38 @@
                 <h1>interestmm</h1>
                 <div class="container-3">
                     <form method="GET" action="signinprc.php">
-                        <div class="input-field">
-                            <input id="name" type="text" class="validate white-text">
-                            <label class="white-text" for="name">Your Name</label>
+                        <div class="in-i_f1">
+                            <div class="input-field">
+                                <input id="name" type="text" class="validate white-text">
+                                <label class="white-text" for="name">Profile Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate">
+                                <label class="white-text" for="email">Email</label>
+                            </div>
+                            
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate">
+                                <label class="white-text" for="password">Password</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="cpassword" type="password" class="validate">
+                                <label class="white-text" for="cpassword">Confirm Password</label>
+                            </div>
+                            <span style="color:rgb(230, 54, 121);" id="pw-mm"><b>*Password mismatched</b></span>
+                            <br/>
+                            
+                            <button class="container-1" id="next" type="button">Next</button>
                         </div>
-                        <div class="input-field">
-                            <input id="email" type="email" class="validate">
-                            <label class="white-text" for="email">Email</label>
+                        <div class="in-i_f2">
+                            <!-- Customizable input  -->
+                            <p style="transform: translateY(20px)" class="white-text">Interests</p>
+                            <div class="chips white-text">
+                                <input class="autocomplete custom-class white-text" id="autocomplete-input">
+                            </div>
+                            <button class="" id="back" type="button"><b>&laquo;</b></button>
+                            <button class="container-1" id="submit" type="submit">Sign in</button>
                         </div>
-                        <!-- Customizable input  -->
-                        <p style="transform: translateY(20px)" class="white-text">Interests</p>
-                        <div class="chips white-text">
-                            <input class="autocomplete custom-class white-text" id="autocomplete-input">
-                        </div>
-                        
-                        <input class="container-1" name="in-signin" type="submit" value="sign in">
                     </form>
                 </div>
             </div>
@@ -53,7 +72,7 @@
 
 
 
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
